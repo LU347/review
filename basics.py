@@ -16,6 +16,7 @@ print(type(x))
 x = complex(1j)
 
 #Casting
+x = float(1) # 1.00
 
 #Strings
 print("My name is 'Lucile'")
@@ -61,6 +62,24 @@ print(len(mytuple))
 # unordered, items are unchangeable, unindexed, no duplicates
 thisset = {"apple", "banana", "cherry"}
 print(thisset)
+
+# accessing elements requires a for loop or check is a specific value is in a set by using 'in'
+if "apple" in thisset:
+  print(True)
+else:
+  print(False)
+print("apple" not in thisset) #returns false
+
+# adding elements requires .add() method
+thisset.add("capybara")
+print(thisset)
+
+#removing elements requires .remove() or .discard()
+# .remove() will raise an error if the item doesn't exist
+# .discard() won't raise an error
+# .pop() removes a random item and returns the item that was removed
+# .clear() clears the set
+# del thisset completely deletes the set
 
 #Dictionary
 # ordered (3.7+), changeable, no duplicates
