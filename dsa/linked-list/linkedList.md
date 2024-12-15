@@ -39,7 +39,7 @@ The function below returns the value at the ith node (0-indexed).
         return -1               #returns -1 if the value was not found
 ```
 
-This function is supposed to insert a node at the head of the list but NeetCode's implementation shows that it points the head to the new node, instead of replacing the head with the new node. Maybe i'm interpreting it wrong but I'm pretty sure it should make the newly created node the head of the list.
+This function is supposed to insert a node at the head of the list but NeetCode's implementation shows that it points the head to the new node, instead of replacing the head with the new node. Maybe i'm interpreting it wrong but I'm pretty sure it should make the newly created node the head of the list and have it point to the old head
 
 ```
     #NeetCode's implementation
